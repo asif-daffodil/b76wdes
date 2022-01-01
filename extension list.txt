@@ -1,0 +1,5 @@
+Auto Rename Tag
+HTML End Tag Labels
+Live Server
+Live Sass Compiler
+vscode-icons
