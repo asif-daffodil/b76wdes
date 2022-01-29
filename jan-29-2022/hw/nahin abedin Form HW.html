@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body >
+  <h2>COVID-19 Vaccine Registration for residents of Kalabagan, Dhaka</h2>
+    <form action="">
+ 
+      <table cellpadding="10" width="800">
+
+        <tr>
+          <td><label for="Your name"> Your name</label></td>
+          <td>:</td>
+          <td>
+            <input type="text" placeholder="Your name" required minlength="5" maxlength="20" id="Your name"> 
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Your mail"> Your e-mail</label></td>
+          <td>:</td>
+          <td>
+            <input type="email" placeholder="Your e-mail" required minlength="5" maxlength="20" id="Your mail"> 
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Yourno">Contact no.</label></td>
+          <td>:</td>
+          <td>
+            <input type="number" placeholder="Contact no." required minlength="1" maxlength="11" id="Yourno"> 
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="nid">NID no.</label></td>
+          <td>:</td>
+          <td>
+            <input type="number" placeholder="NID no." required minlength="1" maxlength="11" id="nid"> 
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="DOB">Date of birth</label></td>
+          <td>:</td>
+          <td>
+            <input type="date" placeholder="Date of birth" required  id="DOB"> 
+          </td>
+        </tr>
+
+        
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="Gender" id="gender">Male
+            <input type="radio" name="Gender" id="gender">Female
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="prevv">Dose number</label></td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="dose" id="prevv">1st
+            <input type="radio" name="dose" id="prevv">2nd
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="vac">Select your preferred vaccine</label></td>
+          <td>:</td>
+          <td> <select  id="vac">
+            <option >Pfizer</option>
+            <option >Moderna</option>
+            <option >Sinopharm</option>
+            <option value="">AstraZeneca</option>
+          </select>
+        </td>
+        </tr>
+
+        
+        <tr>
+          <td><label for="area">Select your area</label></td>
+          <td>:</td>
+          <td> <select  id="area">
+            <option >Dhali road</option>
+            <option >Dolphin goli</option>
+            <option >1st lane</option>
+            <option >2nd lane</option>
+            <option >3rd lane</option>
+            
+          </select>
+        </td>
+        </tr>
+<tr>
+  <td><label for="pic">Photo of birth certificate if underage</label></td>
+  <td>:</td>
+  <td><input type="file" name="" id="pic"></td>
+</tr>
+
+<tr>
+<td><label for="cmt">Any symptoms?</label></td>
+<td>:</td>
+<td> <textarea name="" id="cmt" cols="40" rows="6" placeholder="Mention any symptoms or allergies that you may have in details"></textarea>
+
+</td>
+</tr>
+
+<tr>
+  <td></td>
+  <td></td>
+  <td>
+    <input type="Reset">
+  <input type="Submit"></td>
+</tr>
+</form>
+
+</table>
+</body>
+</html>

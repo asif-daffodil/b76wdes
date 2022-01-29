@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body bgcolor="gray">
+   <h1>Registration Form</h1>
+  <form action="">
+      <table width="900" align="center" cellpadding="20" bgcolor="white">
+      <tr>
+          <td><label for="yname">Your Name</label></td>
+          <td>:</td>
+          <td>
+            <input type="text" placeholder="Your Full Name" required minlength="5" maxlength="25" id="yname">
+          </td>
+      </tr>
+      <tr>
+        <td> <label for="yreg">Registration Number<label></td>
+        <td>:</td>
+        <td>
+            <input type="number" placeholder="Registration Number" required minlength="8" maxlength="30" id="yreg">
+        </td>
+      </tr>
+      <tr>
+          <td><label for="number">Mobile Number</label></td>
+          <td>:</td>
+          <td><input type="number" placeholder="Phone Number" required minlength="8" maxlength="15" id="number" value="880"></td>
+      </tr>
+      <tr>
+          <td><label for="address">Address</label></td>
+          <td>:</td>
+          <td><textarea name="" id="adress" cols="30" rows="2" placeholder="Address"></textarea></td>
+      </tr>
+      <tr>
+          <td><label for="">Date of Birth</label></td>
+          <td>:</td>
+          <td><input type="date" placeholder="Your Birth Date" required minlength="8" maxlength="20" id="dob"></td>
+      </tr>
+      <tr>
+          <td><label for="">Gender</label></td>
+          <td>:</td>
+          <td><input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female </td>
+      </tr>
+      <tr>
+          <td><label for="">Select Division</label></td>
+          <td>:</td>
+          <td><select id="Division" required>
+            <option value="">--select--</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Chattogram">Chattogram</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Rangpur">Rangpur</option>
+            <option value="Mymensingh">Mymensingh</option>
+        </select></td>
+      </tr>
+      <tr>
+          <td><label for="yemail">E-mail</label></td>
+          <td>:</td>
+          <td><input type="email" placeholder="Your E-mail" required minlength="8" maxlength="30" id="yemail"></td>
+      </tr>
+      <tr>
+          <td><label for="pass">Password</label></td>
+          <td>:</td>
+          <td><input type="password" placeholder="Enter New Password" required minlength="8" maxlength="14" id="pass"></td>
+      </tr>
+      <tr>
+          <td><label for="">Your Photo</label></td>
+          <td>:</td>
+          <td><input type="file" required></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <input type="reset">
+            <input type="submit">
+          </td>
+      </tr>
+        
+
+    </form>
+    </table>
+  
+</body>
+</html>

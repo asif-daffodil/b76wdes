@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h2>Signup Form 1</h2>
+    <table cellpadding="10">
+        <form action="">
+        <tr>
+        <td><label for="yname">Your Name</td>
+        </label>
+        <td>:</td>
+        <td><input type="text" placeholder="Your Name" required minlength="5" maxlength="20" id="yname"></td>
+    </tr>
+    <tr>
+        <td><label for="your email">Your Email</label></td>
+        <td>:</td>
+        <td><input type="email" placeholder="Your Email" required minlength="10" maxlength="20" id="your email"></td>
+    </tr>
+    <tr>
+        <td><label for="mobile number">Mobile Number</label></td>
+        <td>:</td>
+        <td><input type="number" placeholder="Mobile Number" required minlength="8" maxlength="20" id="mobile number" value="880"></td>
+    </tr>
+       <tr>
+           <td><label for="password">Password</label></td>
+           <td>:</td>
+           <td><input type="password" placeholder="Password" required minlength="8" maxlength="20" id="password"></td>
+       </tr>
+       <tr>
+           <td><label for="web">Web Address</label></td>
+           <td>:</td>
+           <td><input type="url" placeholder="Your Website" required minlength="8" maxlength="20" id="web"></td>
+       </tr>
+       <tr>
+           <td><label for="gender">Gender</label></td>
+           <td>:</td>
+           <td><input type="radio" name="gender" >Male
+            <input type="radio" name="gender" >Female
+            <input type="radio" name="gender" >Tiktoker</td>
+       </tr>
+       <tr>
+           <td><label for="">Quata</label></td>
+           <td>:</td>
+           <td><input type="checkbox" name="Quata" >Tribe
+            <input type="checkbox" name="Quata" >disabled
+            <input type="checkbox" name="Quata" >woman
+            <input type="checkbox" name="Quata" >freedom fighter</td>
+       </tr>
+       <tr>
+           <td><label for="dob">Date of Birth</label></td>
+           <td>:</td>
+           <td><input type="date" placeholder="Date of Birth" id="dob"></td>
+       </tr>
+       <tr>
+           <td><label for="country">Select country</label></td>
+           <td>:</td>
+           <td><select id="country">
+            <option value="bd">Bangladesh</option>
+            <option value="in">India</option>
+            <option value="pak">Pakistan</option>
+            <option value="uk">United Kingdom</option>
+            <option value="us">United State</option>
+            <option value="aus">Australia</option>
+        </select>
+  </td>
+       </tr>
+       <td><label for="comment">Your comment</label></td>
+       <td>:</td>
+       <td><textarea name="" id="comment" cols="40" rows="6" placeholder="Your comment"></textarea></td>
+       <tr>
+           <td><label for="file">Your Picture</label></td>
+           <td>:</td>
+           <td><input type="file"></td>
+       </tr>
+       <td><label for="color">Hair Color</label></td>
+       <td>:</td>
+       <td><input type="color" id="color"></td>
+       <tr>
+           <td></td>
+           <td></td>
+           <td><input type="reset">
+            <input type="submit" value="Sign Up"></td>
+       </tr>
+       
+      </form>
+  </table>
+</body>
+</html>

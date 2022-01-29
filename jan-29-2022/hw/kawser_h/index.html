@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Using Table</title>
+</head>
+<body>
+    <form action="">
+            <h2 align="center">Sign Up Form</h2>
+        <table cellpadding="15" cellspacing="0" width="700" bgColor="GhostWhite" align="center">
+                <tr>
+                    <td><label for="fName">First Name</label></td>
+                    <td>:</td>
+                    <td><input type="text" placeholder="First Name" id="fName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lName">Last Name</label></td>
+                    <td>:</td>
+                    <td><input type="text" placeholder="Last Name" id="lName"  ></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>:</td>
+                    <td><input type="email" placeholder="contact@exam.com" id="email" required pattern="@"></td>
+                </tr>
+                <tr>
+                    <td><label for="pNumber">Phone Number</label></td>
+                    <td>:</td>
+                    <td><input type="number" placeholder="Number" id="pNumber" value="880"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>:</td>
+                    <td><input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio"  name="gender">Other</td>
+                </tr>
+                <tr>
+                    <td><label for="dOfBirth">Date Of Birth</label></td>
+                    <td>:</td>
+                    <td><input type="date" id="dOfBirth"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td>:</td>
+                    <td>
+                     <textarea name="" id="address" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Select Country</label></td>
+                    <td>:</td>
+                    <td>
+                     <select name="" id="country">
+                         <option value="">Country</option>
+                         <option value="bd">Bangladesh</option>
+                         <option value="in">India</option>
+                         <option value="pk">Pakistan</option>
+                         <option value="ne">Nepal</option>
+                         <option value="ja">Japan</option>
+                     </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Skills</label></td>
+                    <td> : </td>
+                    <td><input type="checkbox">HTML <input type="checkbox">CSS <input type="checkbox"> Javascript <input type="checkbox">Java <input type="checkbox">PHP</td>
+                </tr>
+                <tr>
+                    <td><label for="">Picture</label></td>
+                    <td>:</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><label for="password"> Password</label></td>
+                    <td>:</td>
+                    <td><input type="password" placeholder="password" required minlength="8"></td>
+                </tr>
+                <tr >
+                    <td ><input  type="submit" name="Submit" ></td>
+                </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
