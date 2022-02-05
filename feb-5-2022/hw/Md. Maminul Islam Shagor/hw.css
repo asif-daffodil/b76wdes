@@ -1,0 +1,29 @@
+.ger{
+    height: 3in;
+    width: 5in;
+    border: 0px;
+}
+.b{
+    height: 1in;
+    width: 5in;
+    background-color: black;
+
+}
+.r{
+    height: 1in;
+    width: 5in;
+    background-color: red;
+}
+.y{
+    height: 1in;
+    width: 5in;
+    background-color: yellow;
+}
+
+#btn{
+    text-transform: capitalize;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bolder;
+
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.myText {
+  width: 600px;
+  background: lightgray;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+}
+
+h1,
+h2 {
+  display: inline-block;
+  width: 600px;
+  padding: 30px;
+  background: lightblue;
+}
+
+b,
+a,
+i {
+  display: block;
+}

@@ -1,0 +1,30 @@
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+#outer
+{
+    height: 600px;
+    width: 850px;
+    background: rgb(207, 184, 184);
+}
+#a
+{
+    height: 200px;
+    width: 700px;
+    background: rgb(7, 7, 7);
+}
+#a
+{
+    height: 200px;
+    width: 700px;
+    background: red;
+}
+#a
+{
+    height: 200px;
+    width: 700px;
+    background: gold;
+}

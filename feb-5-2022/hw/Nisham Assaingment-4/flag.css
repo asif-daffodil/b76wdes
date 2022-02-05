@@ -1,0 +1,26 @@
+.black {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    height: 200px;
+    width: 800px;
+}
+
+.red {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    height: 200px;
+    width: 800px;
+}
+
+.gold {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gold;
+    height: 200px;
+    width: 800px;
+}

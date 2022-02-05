@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pain {
+  width: 300px;
+  height: 200px;
+  background: green;
+  display: flex;
+  border: 1px solid black;
+}
+
+.rain {
+  width: 140px;
+  height: 140px;
+  background: red;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.pain:hover {
+  background: white;
+}
+
+.abul {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.babul {
+  width: 100%;
+  height: 33%;
+  background: black;
+}
+
+.kabul {
+  width: 100%;
+  height: 34%;
+  background: red;
+}
+
+.bulbul {
+  width: 100%;
+  height: 33%;
+  background: yellow;
+}
+
+.data {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.kata {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.bata {
+  width: 100%;
+  height: 100%;
+  background: yellow;
+}
+
+.tata {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: lightblue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container > div {
+  width: 30%;
+  height: 200px;
+  background: blue;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container > div:hover {
+  background: darkblue;
+  font-size: 60px;
+  box-shadow: 10px 10px 10px black;
+}

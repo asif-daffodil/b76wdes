@@ -1,0 +1,43 @@
+.heading{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+.flag{
+    width: 500px;
+    margin: auto auto 75px auto;    
+}
+
+.black{
+    background-color: black;
+    height: 100px;
+}
+
+.red{
+    background-color: red;
+    height: 100px;
+}
+
+.gold{
+    background-color: gold;
+    height: 100px;
+}
+
+article{
+    margin: 0 150px;
+    padding: 20px;
+    background-color: rgb(240, 240, 214);
+    border-radius: 10px;
+    color: rgb(44, 36, 87);
+}
+
+.readmorebtn{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: gold;
+}

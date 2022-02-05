@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+}
+.flag{
+    margin-left: 580px;
+    border: 1px solid #fff;
+    width: 360px;
+    height: 210px;
+}
+.black{
+    background-color: black;
+    height: 70px;
+    border-bottom: 1px solid black;
+}
+.red{
+    background-color: red;
+    height: 70px;
+    border-bottom: 1px solid red;
+}
+.yellow{
+    background-color: yellow;
+    height: 70px;
+    border: 1px solid yellow;
+}
+

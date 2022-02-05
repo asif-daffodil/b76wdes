@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-div
+{
+margin-top: 200px;
+margin-left: 400px;
+width: 800px;
+height: 360px;
+}
+.first-div
+{
+    width: 800px;
+    height: 120px;
+    background-color: black;
+}
+.second-div
+{
+    width: 800px;
+    height: 120px;
+    background-color: red;
+}
+.third-div
+{
+    width: 800px;
+    height: 120px;
+    background-color: gold;
+}

@@ -1,0 +1,19 @@
+body{
+    background-color: wheat;
+    margin-left: 400px;
+}
+.first{
+    background-color: black;
+    width: 400px;
+    height: 80px;
+}
+.second{
+    background-color: red;
+    width: 400px;
+    height: 80px;
+}
+.third{
+    background-color: yellow;
+    width: 400px;
+    height: 80px;
+}
