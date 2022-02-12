@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1 {
+    margin-bottom: 15px;
+}
+
+.flag {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 401px;
+    width: 600px;
+}
+.vertical-stripe {
+    position: absolute;
+    background-color: #CD0001;
+    height: 400px;
+    width: 70px;
+    margin-left: 10px;
+}
+
+.horizontal-stripe {
+    background-color: #CD0001;
+    height: 69px;
+    width: 600px;
+    position: absolute;
+} 

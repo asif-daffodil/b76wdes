@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr) 2fr;
+  padding: 20px;
+}
+
+.parent > div {
+  background: cornflowerblue;
+}
+
+.dhaka {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.dhanmondi {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background: red;
+  position: relative;
+}
+
+.lake {
+  width: 200px;
+  height: 200px;
+  background: aqua;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  transition: 0.5s;
+}
+
+.popular {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  transition: 0.5s;
+}
+
+.cityCollege {
+  width: 200px;
+  height: 200px;
+  background: gray;
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  transition: 0.5s;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background: pink;
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  transition: 0.5s;
+}
+
+.dhanmondi:hover .lake {
+  top: 300px;
+  left: 300px;
+}
+
+.dhanmondi:hover > .popular {
+  top: 300px;
+  right: 300px;
+}
+
+.dhanmondi:hover > .cityCollege {
+  right: 300px;
+  bottom: 300px;
+}
+
+.dhanmondi:hover > .square {
+  left: 300px;
+  bottom: 300px;
+}

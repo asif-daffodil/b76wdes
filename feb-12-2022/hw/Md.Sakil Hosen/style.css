@@ -1,0 +1,54 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-div
+{
+width: 400px;
+height: 200px;
+border: 1px solid black;
+display: flex;
+background-color: green;
+
+margin: auto;
+}
+.main-div:hover
+{
+    background-color: aliceblue;
+}
+.frist-div
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: auto;
+    border-radius: 50px;
+}
+.main-divs
+{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    
+}
+.frist-divs
+{
+    width: auto;
+    height: 40px;
+    margin: auto;
+    background-color: red;
+    flex-direction: row;
+    margin-top: 80px;
+    display: flex;
+    position: relative;
+}
+.top-div
+{
+    width: 40px;
+    height:200px ;
+    background-color: red;
+    margin-left: 180px;
+    position: absolute;
+}

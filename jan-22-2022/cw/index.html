@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h2>Signup Form</h2>
+    <form action="">
+        <table cellpadding="10">
+            <tr>
+                <td><label for="yname">Your Name</label></td>
+                <td>:</td>
+                <td>
+                    <input type="text" placeholder="Your Name" required minlength="5" maxlength="20" id="yname">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Your Email</label></td>
+                <td>:</td>
+                <td>
+                    <input type="email" placeholder="Your Email" required minlength="10" maxlength="30" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number</label></td>
+                <td>:</td>
+                <td>
+                    <input type="number" placeholder="Phone Number" required minlength="8" maxlength="20" id="mobile" value="880">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td>:</td>
+                <td>
+                    <input type="password" placeholder="Password" required minlength="8" maxlength="20" id="pass">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="web">Web Address</label></td>
+                <td>:</td>
+                <td>
+                    <input type="url" placeholder="Your Website" required minlength="8" maxlength="20" id="web" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td>:</td>
+                <td>
+                    <input type="date" placeholder="Your Birthday" required id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="gender" >Male
+                    <input type="radio" name="gender" >Female
+                    <input type="radio" name="gender" >Tiktoker
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Quata</label></td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="quata" >Tribe
+                    <input type="checkbox" name="quata" >Disabled
+                    <input type="checkbox" name="quata" >Women
+                    <input type="checkbox" name="quata" >Freedom Fighter
+                </td>
+            </tr>
+            <tr>
+                <td><label for="country">Select Country</label></td>
+                <td>:</td>
+                <td>
+                    <select id="country" required>
+                        <option value="">--Select--</option>
+                        <option value="bd">Bangladesh</option>
+                        <option value="in">India</option>
+                        <option value="pak">Pakistan</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="us">United State</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Comment">Your Comment</label></td>
+                <td>:</td>
+                <td>
+                    <textarea name="" id="Comment" cols="40" rows="6" placeholder="Your Comment"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="file">Your Picture</label></td>
+                <td>:</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td><label for="color">Hair Color</label></td>
+                <td>:</td>
+                <td><input type="color" id="color"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="reset">
+                    <input type="submit" value="Sign Up">
+                </td>
+            </tr>
+
+
+
+        
+        </table>
+    </form>
+</body>
+</html>

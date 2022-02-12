@@ -1,0 +1,35 @@
+*{
+   padding: 0;
+  margin: 0;
+}
+.fClass{
+    border: 1px solid rgb(235, 20, 20);
+    background: green;
+    padding: 10px;
+    margin: 10px;
+}
+.fClass2{
+    border: 1px solid rgb(20, 52, 235);
+    /* background: rgb(128, 105, 0); */
+    /* padding: 10px; */
+    /* padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 20px 5px 20px 10px;
+    margin: 10px;
+    
+}
+.fClass2 p{
+    font-size: 30px;
+    /* text-decoration: dashed; */
+    letter-spacing:3px;
+    word-spacing: 5px;
+    text-shadow: 3px 1px 5px gray;
+    
+}
+a{
+    margin: 20px;
+    font-size:30px;
+   text-decoration: none;
+}
