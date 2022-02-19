@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flagArea{
+    width: 100%;
+    height: 100vh;
+    background:#83d0e7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.francFlag{
+    width: 400px;
+    height: 300px;
+    background:white;
+    position: relative;
+    transition: 1s;
+    
+    
+}
+.francFlag .blueArea{
+    background: #3d63e0;
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.francFlag .readArea{
+    background: #ec4545;
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* hover area */
+.francFlag:hover{
+    background: yellow;
+}
+.blueArea:hover{
+    background: black;
+}
+/*finland flag area*/
+.finlanFlagArea{
+    width: 400px;
+    height: 300px;
+    background:#0404be;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 15%;
+}
+.finlanFlagArea > div{
+    width:100%;
+    height: 100%;
+    background:white;
+}
+/*Greece Flag Area*/
+.greeceFlagArea{
+    width: 400px;
+    height: 300px;
+    background:white;
+    position: relative;
+    
+}
+.greeceFlagArea .leftArea{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.greeceFlagArea .leftArea .box{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.greeceFlagArea .leftArea .box>div{
+    width: 40%;
+    height: 40%;
+    background: #0404be;
+}
+.box .sideThree, .sideFour{
+   margin-top: 17%;
+}
+.greeceFlagArea .leftArea .boxTwo{
+    width: 56%;
+    height: 100%;
+    background: #0404be;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.greeceFlagArea .leftArea .boxTwo>div{
+    width: 100%;
+    height: 20%;
+    background: white;
+}
+.greeceFlagArea .leftArea .boxTwo .buttomDive{
+    margin-top: 42px;
+}
+.greeceFlagArea .buttomArea{
+    width: 100%;
+    height: 50%;
+    background: #0404be;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.greeceFlagArea .buttomArea > div{
+    width: 100%;
+    height: 20%;
+    background: white;
+}
+.greeceFlagArea .buttomArea .buttomDive{
+    margin-top: 42px;
+}

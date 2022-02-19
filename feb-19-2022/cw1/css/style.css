@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flags {
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flags > div {
+  width: 300px;
+  height: 198px;
+  position: relative;
+}
+
+.belgium {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.belgium > div:first-child {
+  background: #000;
+}
+.belgium > div:nth-child(2) {
+  background: #f5d324;
+}
+.belgium > div:last-child {
+  background: #e8313e;
+}
+
+.belgium:hover > div:first-child {
+  background: #002290;
+}
+.belgium:hover > div:nth-child(2) {
+  background: #f7f7f7;
+}
+.belgium:hover > div:last-child {
+  background: #e62837;
+}
+
+.greece {
+  position: relative;
+}
+
+.small-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 110px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 22px;
+  z-index: 100;
+}
+
+.small-part > div {
+  background: #055eb1;
+}
+
+.big-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 198px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 22px;
+  background: #fff;
+}
+
+.big-part > div {
+  background: #055eb1;
+}
+
+.finland {
+  background: #003281;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 40px;
+}
+
+.finland > div {
+  background: #fff;
+}

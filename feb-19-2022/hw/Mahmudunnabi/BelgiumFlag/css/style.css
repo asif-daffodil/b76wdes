@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.belflag {
+    background-color: #3d3d3d;
+    width: 420px;
+    height: 400px;
+    margin:0 auto;
+}
+
+.first {
+    background-color: #010101;
+    width: 140px;
+    height: 100%;
+    float: left;
+}
+
+.second {
+    background-color: #fae045;
+    width: 140px;
+    height: 100%;
+    float: left;
+}
+
+.third {
+    background-color: #ef293a;
+    width: 140px;
+    height: 100%;
+    float: left;
+}

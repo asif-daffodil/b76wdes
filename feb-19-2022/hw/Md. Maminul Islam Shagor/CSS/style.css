@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: lightgray;
+    margin: auto;
+}
+.B{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    margin: 20px auto;
+    border: 1px solid black;
+    display: flex;
+}
+.B>.b{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.B>.y{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+}
+.B>.r{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.B>.y:hover{ 
+    background-color: white;
+}
+
+.F{
+    width: 300px;
+    height: 200px;
+    background-color: darkblue;
+    margin: 20px auto;
+    border: 1px solid black;
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: 1fr 2fr;
+
+}
+.F>div{
+    background-color: white;
+}
+
+.G{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: white;
+    border: 1px soide black;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 17px;
+    grid-template-columns: auto;
+}
+.G>div{
+    background-color: blue;
+}
+
+.G>.c{
+    width: 113px;
+    height: 113px;
+    background-color: white;
+    position: absolute;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+
+}
+
+.G>.c>div{
+    background-color: blue;
+    
+}

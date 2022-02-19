@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dhaka {
+  width: max-content;
+  padding: 20px;
+  background: linear-gradient(to top right, #ff0000, #000, #ff0000);
+  margin: 20px auto;
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px yellow;
+  box-shadow: 0px 0px 15px #000, 0px 0px 15px #000 inset;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dhaka::before {
+  content: '" ';
+}
+.dhaka::after {
+  content: ' "';
+}
+
+.shakib {
+  width: 640px;
+  height: 400px;
+  margin: auto;
+  background: url("../images/sal.jpg");
+  position: relative;
+  overflow: hidden;
+}
+
+.shakib::before {
+  content: "Shakib-A";
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: -50%;
+  /* transition: 0.5s left linear 2s; */
+  transition: 0.5s;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.shakib::after {
+  content: "l-Hasan";
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: -50%;
+  transition: 0.5s;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.shakib:hover::before {
+  left: 0;
+}
+.shakib:hover::after {
+  right: 0;
+}

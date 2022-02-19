@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+  
+  .flag {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    height: 400px;
+    width: 400px;
+    background-color: #0d5eaf;
+    padding-bottom: 70px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    
+    
+  }
+  
+  .vertical-stripe {
+    position: absolute;
+    background-color: white;
+    height: 172px;
+    width: 40px;
+    margin-right: 145px;
+    margin-bottom: 200px;
+    
+  }
+  
+  .horizontal-stripe {
+    background-color: #fff;
+    height: 40px;
+    width: 190px;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 185px;
+    margin-bottom: 200px;
+  }
+
+  .hp1 {
+    background-color: #fff;
+    height: 31px;
+    width: 249px;
+    position: absolute;
+    margin-top: -91px;
+    margin-bottom: 180px;
+    margin-right: -252px;
+    ;
+  }
+
+  .hp2 {
+    background-color: #fff;
+    height: 31px;
+    width: 248px;
+    position: absolute;
+    margin-top: 246px;
+    margin-bottom: 376px;
+    margin-right: -252px;
+    ;
+  }
+
+  .hp3 {
+    background-color: #fff;
+    height: 31px;
+    width: 400px;
+    position: absolute;
+    margin-right: -103px;
+    margin-bottom: -4px;
+    
+  }
+  .hp4 {
+    background-color:#fff;
+    height: 31px;
+    width: 400px;
+    position: absolute;
+    margin-bottom: -148px;
+    margin-right: -103px;
+    
+  }
+  .hp5 {
+    background-color: white;
+    height: 147px;
+    width: 400px;
+    position: absolute;
+    margin-bottom: -135px;
+    margin-right: -103px;
+    margin-top: 272px;
+    
+  }
