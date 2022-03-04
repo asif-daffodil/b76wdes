@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("./other.css");
+
+$bgColor: limegreen;
+@mixin commonCss($w: 100px, $h: 100px, $b: cornflowerblue) {
+  width: $w;
+  height: $h;
+  background-color: $b;
+  margin: 20px auto;
+}
+
+.main {
+  @include commonCss(200px, 200px);
+}
+
+.pain {
+  @include commonCss(300px, 200px, $bgColor);
+}
+
+.rain {
+  @include commonCss();
+}
+
+.dhaka {
+  @include commonCss(300px, 300px, #000);
+  display: flex;
+  > .faka {
+    @include commonCss(200px, 200px, #fff);
+    margin: auto;
+    display: flex;
+    > .aka-baka {
+      @include commonCss(100px, 100px, hotpink);
+      margin: auto;
+      position: relative;
+      &:hover {
+        background: lime;
+        &::before {
+          background: orange;
+        }
+      }
+      &::before {
+        content: "";
+        @include commonCss(50px, 50px, orangered);
+        position: absolute;
+        top: -25px;
+        left: -25px;
+      }
+    }
+  }
+}
+
+.bd {
+  @include commonCss(600px, 300px, darkred);
+  margin: 20px auto;
+  border: 5px solid #000;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+}
+
+.cd {
+  @extend .bd;
+  background: aquamarine;
+}
+
+.mudy {
+  @extend .cd;
+  background: skyblue;
+}
