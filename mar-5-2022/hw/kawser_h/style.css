@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #a9a9a9;
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 auto;
+    
+}
+.navBar{
+    padding: 15px;
+    background:ghostwhite;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.navBar .navItem ul{
+    display: flex;
+    justify-content: space-evenly;
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    
+}
+.navItem ul li{
+    transition: 0.7s;
+}
+
+/* .navItem ul li:hover:after{
+    content: "";
+    width: 30px;
+    border-bottom: solid 2px black;
+    transition: 1s;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+} */
+.navItem ul li::before{
+    content: "";
+    width: 8%;
+    border: solid 1px black;
+    opacity: 0;
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    transition: 0.7s;
+
+}
+ .navItem ul li:hover:before{
+    content: "";
+    width: 8%;
+    opacity: 1;
+    border-bottom: solid 1px black;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+}
+.bannerArea{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.card{
+    width: 30%;
+    height: 400px;
+    background: blueviolet;
+    
+}
+.img{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/basketball.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img2{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/cafeteria.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/basketball.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/basketball.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0000004f;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transition: 0.7s;
+    opacity: 0;
+
+}
+.img2::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0000004f;
+    position: absolute;
+    bottom: -50%;
+    transition: 0.7s;
+    opacity: 0;
+
+}
+.img3::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0000004f;
+    position: absolute;
+    top: 0;
+    right: -50%;
+    transition: 0.7s;
+    opacity: 0;
+
+}
+.img:hover::after{
+    left: 0;
+    opacity: 1;
+
+}
+.img2:hover::after{
+    bottom: 0;
+    opacity: 1;
+
+}
+.img3:hover::before{
+    right: 0;
+    opacity: 1;
+
+}

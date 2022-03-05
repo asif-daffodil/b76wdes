@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../images/lionel-messi.png") no-repeat bottom right/auto 100%;
+}
+
+.main > .flag {
+  width: 300px;
+  height: 200px;
+  background: green;
+  margin: auto;
+  -webkit-box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+          box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main > .flag > .orange {
+  width: 220px;
+  height: 140px;
+  background: yellow;
+  margin: auto;
+  -webkit-clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+          clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main > .flag > .orange > .blue {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  -webkit-box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+          box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.main > .flag > .orange > .blue > .white {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  position: absolute;
+  top: 30px;
+  left: -50%;
+}
+/*# sourceMappingURL=style.css.map */

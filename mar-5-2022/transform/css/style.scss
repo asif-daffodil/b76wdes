@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.myDiv {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.5s;
+  &:first-child {
+    background: cornflowerblue;
+    &:hover {
+      transform: scale(80%, 80%);
+    }
+  }
+  &:nth-child(2) {
+    background: lime;
+    &:hover {
+      transform: translateX(20px) translateY(20px);
+    }
+  }
+  &:nth-child(3) {
+    background: orange;
+    &:hover {
+      transform: rotateZ(180deg) rotateY(180deg) rotateX(180deg);
+    }
+  }
+  &:nth-child(4) {
+    background: hotpink;
+    &:hover {
+      transform: skew(-15deg);
+    }
+  }
+  &:nth-child(5) {
+    background: teal;
+    &:hover {
+      transform: skew(-15deg) rotateZ(180deg) translateX(-30px)
+        translateY(-20px) scale(80%, 80%);
+    }
+  }
+}

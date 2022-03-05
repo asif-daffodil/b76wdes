@@ -1,0 +1,92 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ba{
+    background-color:blueviolet;
+    width: 100px;
+    height: 100px;
+    /* display:inline-block; */
+    align-items: center;
+    margin:100px auto ;
+    text-align: center;
+    /* display: flex; */
+    padding: auto;
+    position: relative;
+    /* display: block; */
+   
+}
+
+
+.ba::before{
+    content:"ALL" ;
+    height: 100px;
+    width: 100px;
+    background-color:rosybrown;
+    /* display:block; */
+    position: absolute;
+    left: -100px;
+
+}
+
+.ba::after{
+    content:"WELL" ;
+    height: 100px;
+    width: 100px;
+    background-color:rosybrown;
+    /* display:block; */
+    position: absolute;
+    left: 100px;}
+ 
+
+    .h{
+        background-color:blueviolet;
+        width: 100px;
+        height: 100px;
+        /* display:inline-block; */
+        align-items: center;
+        margin:100px auto ;
+        text-align: center;
+        /* display: flex; */
+        padding: auto;
+        position: relative;
+        /* display: block; */
+        ;
+    }
+    .h::before{
+        content:"WE" ;
+        height: 100px;
+        width: 100px;
+        background-color:burlywood;
+        /* display:block; */
+        position: absolute;
+        left: -100px;
+    transition: 1s;}
+
+
+        .h::after{
+            content:"LUCKY" ;
+            height: 100px;
+            width: 100px;
+            background-color:burlywood;
+            /* display:block; */
+            position: absolute;
+            right: -100px;
+            transition:1s ;
+        }
+
+            .h:hover.h::before{
+                left: 0;
+            /* text-transform: uppercase; */
+                /* transform: rotate(90deg); */
+               
+            }
+            .h:hover.h::after{
+                right: 0;
+             /* text-transform: lowercase; */
+             /* transform: rotate(90deg); */
+
+            }
+

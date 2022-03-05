@@ -1,0 +1,30 @@
+.*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.a::before{
+    content: '"Dhaka';
+}
+.a::after{
+    content: 'Bangladesh"';
+}
+.a{
+    width: max-content;
+    padding: 20px;
+    background: aqua;
+    margin: 20px auto;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 3px,4px,5px,red;
+    text-transform: uppercase;
+    box-shadow: red;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.putin{
+    width: 200px;
+    height: 170px;
+    margin: auto;
+    background: url("../download.jpg");
+}

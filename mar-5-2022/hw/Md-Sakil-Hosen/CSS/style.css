@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1
+{
+    text-align: center;
+}
+/* Main-Div */
+.main-div
+{
+    width: 400px;
+    height: 420px;
+    margin: auto;
+    margin-top: 20px;
+    background-image: url("./img/25.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+/*.main-div::before*/
+.main-div::before
+{
+    width: 50%;
+    height: 100%;
+    content:" Sakil ";
+    background-image: url("./img/24.jpg");
+    background-size:cover;
+    position: absolute;
+    background-size: 100% 100%;
+    top: 0;
+    left: -50%;
+    transition: 0.5s;
+    font-size:32px;
+    font-weight:bolder;
+    text-transform: uppercase;
+    color: red;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display: flex;
+}
+/*.main-div::after*/
+.main-div::after
+{    
+    width: 50%;
+    height: 100%;
+    content:" hosen ";
+    background-image: url("./img/26.jpg");
+    background-size:cover;
+    position: absolute;
+    background-size: 100% 100%;
+    top: 0;
+    right: -50%;
+    transition: 0.5s;
+    font-size:32px;
+    font-weight:bolder;
+    text-transform: uppercase;
+    color: red;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.main-div:hover::before
+{
+    top: 0;
+    left: 0;
+    
+}
+.main-div:hover::after
+{
+    top: 0;
+    right: 0;
+}

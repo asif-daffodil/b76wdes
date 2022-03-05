@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.match {
+    width: 1200px;
+    height: 675px;
+    margin: auto;
+    background: url("./images/main.jpg");
+    position: relative;
+    overflow: hidden;
+}
+
+.match::before {
+    content:
+    "Bangladesh 155/8 (20)";
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transition: 2s;
+    font-size: 75px;
+    font-weight: bolder;
+    color: rgb(251, 170, 41);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.match::after {
+    content:
+    "Afghanistan 94 (17.4)";
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: -50%;
+    transition: 2s;
+    font-size: 75px;
+    font-weight: bolder;
+    color: rgb(251, 56, 56);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.match:hover::before {
+    left: 0%;
+}
+
+.match:hover::after {
+    right: 0%;
+}
