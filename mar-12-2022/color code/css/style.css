@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  background: #13bb54;
+  position: relative;
+}
+
+.main .pain {
+  width: 100px;
+  height: 100px;
+  background: rgba(49, 23, 111, 0.6);
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+
+.main .rain {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #6677a9aa;
+}
+/*# sourceMappingURL=style.css.map */

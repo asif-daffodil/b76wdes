@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main ul {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+main ul li {
+  list-style: none;
+  color: #000;
+  font-size: 24px;
+  text-shadow: 2px 2px 2px #ccc;
+  border: 2px solid #000;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main ul li:hover {
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+main ul li:hover::before {
+  bottom: 0%;
+}
+
+main ul li::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -10;
+}
+
+main ul li:nth-child(1)::before {
+  background: #4867aa;
+}
+
+main ul li:nth-child(2)::before {
+  background: #00b6f1;
+}
+
+main ul li:nth-child(3)::before {
+  background: #0077b5;
+}
+
+main ul li:nth-child(4)::before {
+  background: #e54786;
+}
+
+main ul li:nth-child(5)::before {
+  background: #f00;
+}
+/*# sourceMappingURL=style.css.map */

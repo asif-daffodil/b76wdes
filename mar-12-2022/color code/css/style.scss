@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  background: rgb(19, 187, 84);
+  position: relative;
+  .pain {
+    width: 100px;
+    height: 100px;
+    background: rgba(49, 23, 111, 0.6);
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+  }
+  .rain {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #6677a9aa;
+  }
+}

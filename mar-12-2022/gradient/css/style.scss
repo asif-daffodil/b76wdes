@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .linear-gradient {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to bottom right, white, red, black);
+  }
+  .radial-gradient {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(white, blue 50%, black);
+    border-radius: 50%;
+    box-shadow: 0 0 20px #000 inset;
+  }
+
+  .coxBazar {
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    /* background-image: url("../image/cox.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.6),
+      rgba(255, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ); */
+    background: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 255, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../image/cox.gif") no-repeat center / cover;
+  }
+}

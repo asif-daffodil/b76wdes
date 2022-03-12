@@ -1,0 +1,33 @@
+// @import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: shakib;
+  src: url("../fonts/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: BDjonogon;
+  src: url("../fonts/Smooch_Sans/SmoochSans-VariableFont_wght.ttf");
+}
+
+.shadhinota {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  margin: 20px auto;
+  font-family: shakib;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.amarBangla {
+  @extend .shadhinota;
+  font-family: BDjonogon;
+  font-weight: 600;
+}
