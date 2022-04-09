@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            font-family: ariel, Arial, Helvetica;
+            background: #eee;
+        }
+        .card {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            line-height: 300px;
+            margin: 100px auto;
+            background: #fff;
+            color: #03446A;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            /* animation-name: sample;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier(0.6,0.1,1.0,0.1); */
+
+            animation: sample 2s cubic-bezier(0.6,0.1,1.0,0.1);
+        }
+        @keyframes sample{
+            0%{ border-radius: 0%; }
+            100%{ border-radius: 50%;background-color: tomato; }
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 style="margin-auto: 50px;">Google Baba : CSS Animation</h1>
+    <div class="card"></div>
+</body>
+</html>

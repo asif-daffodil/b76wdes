@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$mainBg: teal;
+$hoverBg: cornflowerblue;
+
+@mixin anchor {
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bolder;
+}
+
+@mixin dropDown($top, $left) {
+  width: 100%;
+  position: absolute;
+  top: $top;
+  left: $left;
+  background: $mainBg;
+}
+
+nav {
+  width: 100%;
+  background: $mainBg;
+  .mainMenu {
+    width: 750px;
+    margin: auto;
+    display: flex;
+    > li {
+      list-style: none;
+      width: 150px;
+      margin: auto;
+      position: relative;
+      > a {
+        @include anchor();
+      }
+      &:hover {
+        background: $hoverBg;
+        > ul {
+          display: block;
+        }
+      }
+      > ul {
+        @include dropDown(100%, 0);
+        display: none;
+        > li {
+          list-style: none;
+          position: relative;
+          width: 100%;
+          > a {
+            @include anchor();
+          }
+          &:hover {
+            background: $hoverBg;
+            > ul {
+              display: block;
+            }
+          }
+          > ul {
+            @include dropDown(0, 100%);
+            display: none;
+            > li {
+              list-style: none;
+              position: relative;
+              width: 100%;
+              > a {
+                @include anchor();
+              }
+              &:hover {
+                background: $hoverBg;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

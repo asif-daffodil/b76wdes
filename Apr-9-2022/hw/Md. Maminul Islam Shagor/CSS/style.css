@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightgrey;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myskill{
+    background: white;
+    width: 500px;
+    height: 600px;
+    padding: 25px;
+    margin: 25px;
+}
+.myskill li{
+    list-style-type: none;
+    margin: 40px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+}
+.myskill li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+    background-color: rgb(170,167,173);
+    width: 100%;
+    height: 20px;
+    border-radius: 1000px;
+}
+.myskill li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+    background-color: rgb(249, 250, 250);
+    width: 0;
+    height: 20px;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+    animation-direction: forword;
+}
+.myskill li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 95%;
+        background-color: red;
+    }
+}
+.myskill li.css::after{
+    animation-name: css;
+    }
+    @keyframes css{
+        to{
+            width: 85%;
+            background-color: green;
+        }
+    }
+    .myskill li.js::after{
+        animation-name: js;
+        }
+        @keyframes js{
+            to{
+                width: 80%;
+                background-color: blue;
+            }
+        }
+        .myskill li.bootstrap::after{
+            animation-name: bootstrap;
+            }
+            @keyframes bootstrap{
+                to{
+                    width: 80%;
+                    background-color: aqua;
+                }
+            }
+            .myskill li.java::after{
+                animation-name: java;
+                }
+                @keyframes java{
+                    to{
+                        width: 82%;
+                        background-color: brown;
+                    }
+                }

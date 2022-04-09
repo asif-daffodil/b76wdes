@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-bar {
+  width: auto;
+  height: 60px;
+  background-color: #27ae60;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.nav-bar .logo {
+  padding: 10px;
+}
+
+.nav-bar .logo a {
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.nav-bar .logo a:hover {
+  color: red;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 10px;
+  margin-left: 600px;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.nav-bar ul li a:hover {
+  color: red;
+}
+
+.container {
+  width: 1300px;
+  height: 400px;
+  margin: auto;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  background-color: gray;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding-right: 10px;
+}
+
+.container div {
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+}
+
+@media screen and (min-width: 1300px) {
+  .container {
+    background-color: gray;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  .container {
+    width: 90%;
+    background-color: red;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 100%;
+    background-color: wheat;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+.animation {
+  width: 100%;
+  padding: 4rem;
+  text-align: center;
+  font-size: calc(2vw+1rem);
+  -webkit-animation: myanimation 2s infinite linear;
+          animation: myanimation 2s infinite linear;
+}
+
+.animation h1 {
+  font-weight: bolder;
+  font-size: 160px;
+}
+
+@-webkit-keyframes myanimation {
+  0% {
+    color: wheat;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes myanimation {
+  0% {
+    color: wheat;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.logo {
+  padding: 10px;
+  -webkit-animation: logoanimation 2s infinite linear;
+          animation: logoanimation 2s infinite linear;
+}
+
+.logo a {
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-animation: logoanimation 2s infinite linear;
+          animation: logoanimation 2s infinite linear;
+}
+
+@-webkit-keyframes logoanimation {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes logoanimation {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */

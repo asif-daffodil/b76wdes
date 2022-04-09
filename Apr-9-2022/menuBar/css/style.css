@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  background: teal;
+}
+
+nav .mainMenu {
+  width: 750px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .mainMenu > li {
+  list-style: none;
+  width: 150px;
+  margin: auto;
+  position: relative;
+}
+
+nav .mainMenu > li > a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bolder;
+}
+
+nav .mainMenu > li:hover {
+  background: cornflowerblue;
+}
+
+nav .mainMenu > li:hover > ul {
+  display: block;
+}
+
+nav .mainMenu > li > ul {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: teal;
+  display: none;
+}
+
+nav .mainMenu > li > ul > li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+nav .mainMenu > li > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bolder;
+}
+
+nav .mainMenu > li > ul > li:hover {
+  background: cornflowerblue;
+}
+
+nav .mainMenu > li > ul > li:hover > ul {
+  display: block;
+}
+
+nav .mainMenu > li > ul > li > ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: teal;
+  display: none;
+}
+
+nav .mainMenu > li > ul > li > ul > li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+nav .mainMenu > li > ul > li > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bolder;
+}
+
+nav .mainMenu > li > ul > li > ul > li:hover {
+  background: cornflowerblue;
+}
+/*# sourceMappingURL=style.css.map */

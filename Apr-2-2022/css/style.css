@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: url("../images/EvolutionCursor.png"), auto;
+}
+
+.container {
+  margin: auto;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  background: #d3d3d3;
+}
+
+.container > div {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.animation {
+  width: 100%;
+  padding: 4rem;
+  text-align: center;
+  -webkit-animation: myAnimation 2s infinite linear;
+          animation: myAnimation 2s infinite linear;
+}
+
+@-webkit-keyframes myAnimation {
+  0% {
+    color: red;
+    font-size: calc(2vw + 1rem);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    color: blue;
+    font-size: calc(2vw + 2rem);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    color: red;
+    font-size: calc(2vw + 1rem);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes myAnimation {
+  0% {
+    color: red;
+    font-size: calc(2vw + 1rem);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    color: blue;
+    font-size: calc(2vw + 2rem);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    color: red;
+    font-size: calc(2vw + 1rem);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$green:#27ae60;
+$black:#060709;
+$red:red;
+$whith:#FFFFFF;
+.nav-bar{
+width: auto;
+height: 60px;
+background-color: #27ae60;
+display: flex;
+position: relative;
+.logo{
+    padding: 10px;
+    a{
+        font-size: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #FFFFFF;
+        &:hover{
+            color: $red;
+            transition: 2s;
+        }
+    }  
+}
+ul{
+    list-style: none;
+    margin: 10px;
+    margin-left: 600px;
+    li{
+        display: inline-block;
+        padding: 10px;
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: #FFFFFF;
+           &:hover{
+               color: red;
+           }
+        }
+    }
+}
+}
+
+
+.container{
+    width: 1300px;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    background-color: gray;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    padding-right: 10px;
+    div{
+        border: 1px solid red;
+        padding: 10px;
+        border-radius: 10px;
+         background:white;
+        
+    }
+}
+@media screen and (min-width:1300px) {
+    .container{
+    background-color: gray;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    
+    }
+    
+}
+
+@media screen and (min-width:760px) and (max-width:1300px){
+    .container{
+        width: 90%;
+    background-color: red;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    
+    }
+    
+}
+@media screen and (max-width:760px){
+    .container{
+    width: 100%;
+    background-color: wheat;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+    
+    }
+    
+}
+.animation{
+    width: 100%;
+    padding: 4rem;
+    text-align: center;
+    font-size: calc(2vw+1rem);
+   animation : myanimation 2s infinite linear;
+   h1{
+       font-weight: bolder;
+       font-size: 160px;
+   }
+}
+@keyframes myanimation {
+    0%{
+        color: wheat;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color: red;
+    }
+}
+.logo{
+    padding: 10px;
+    animation : logoanimation 2s infinite linear;
+    a{
+        font-size: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        animation : logoanimation 2s infinite linear;
+         }
+        }
+@keyframes logoanimation {
+    0%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color: red;
+    }
+   }

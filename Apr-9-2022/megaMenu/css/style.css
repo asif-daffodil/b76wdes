@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+}
+
+nav > ul {
+  background: darkblue;
+  width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  position: relative;
+}
+
+nav > ul > li {
+  width: 150px;
+  margin: auto;
+  list-style: none;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
+nav > ul > li:hover {
+  background: blueviolet;
+}
+
+nav > ul > li:hover > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav > ul > li > div {
+  width: 750px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: skyblue;
+  padding: 20px;
+  display: none;
+}
+
+nav > ul > li > div > ul {
+  width: 100%;
+}
+
+nav > ul > li > div > ul > li {
+  list-style: none;
+}
+
+nav > ul > li > div > ul > li > a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+nav > ul > li > div > ul > li > a:hover {
+  color: blueviolet;
+}
+
+nav > ul > li > div > ul > li:nth-child(1) > a {
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */
