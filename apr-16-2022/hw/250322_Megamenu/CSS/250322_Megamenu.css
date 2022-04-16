@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: orangered;
+  background: blue;
+}
+
+nav {
+  width: 100%;
+  margin-top: 20px;
+}
+
+nav > ul {
+  width: 750px;
+  background-color: cornflowerblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  position: relative;
+}
+
+nav > ul li {
+  list-style: none;
+  width: 100%;
+}
+
+nav > ul li:hover {
+  background: #c4c489;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav > ul li .cate {
+  width: 750px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 0 20px 20px;
+  background: #c2c988;
+}
+
+nav > ul li .cate ul li:nth-child(1) {
+  font-weight: bold;
+}
+
+nav > ul li .cate ul li a {
+  color: #112404;
+  line-height: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+nav > ul li:hover .cate {
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=250322_Megamenu.css.map */

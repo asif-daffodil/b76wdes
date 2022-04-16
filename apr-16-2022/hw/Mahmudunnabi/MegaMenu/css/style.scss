@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.banner-section{
+    background-image: url('../images/5-5d38402a3e93a.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    display: block;
+}
+:before,:after{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.v-center{
+    align-items: center;
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.header{
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    padding: 15px;
+}
+.header .item-left{
+    
+    flex: 0 0 17%;
+}
+.header .logo a{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+.header .item-center{
+    
+    flex: 0 0 66%;
+}
+.header .item-right{
+    
+    flex: 0 0 17%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header .item-right a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #555555;
+    display: inline-block;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.header .menu > ul > li{
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 25px;
+}
+.header .menu > ul > li > a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    position: relative;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+.header .menu > ul > li .sub-menu{
+    position: absolute;
+    z-index: 500;
+    background-color: #ffffff;
+    box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3);
+    padding: 20px 30px;
+    transition: all 0.5s ease;
+    margin-top: 25px;
+    opacity: 0;
+    visibility: hidden;
+}
+.header .menu > ul > li.menu-item-has-children:hover .sub-menu{
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.header .menu > ul > li .sub-menu > ul > li{
+    line-height: 1;
+}
+.header .menu > ul > li .sub-menu > ul > li > a{
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #555555;
+    transition: 0.3s ease;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.header .menu > ul > li .single-column-menu{
+    min-width: 280px;
+    max-width: 350px;
+}
+.header .menu > ul > li .sub-menu > ul > li > a:hover,
+.header .item-right a:hover,
+.header .menu > ul > li:hover > a{
+    color: #ea4636;
+}

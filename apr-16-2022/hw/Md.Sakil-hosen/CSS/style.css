@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  background-color: blue;
+  width: 100%;
+  position: relative;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  padding-left: 100px;
+}
+
+nav .logo a {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px red;
+}
+
+nav .logo a:hover {
+  color: white;
+}
+
+nav .main-nav {
+  width: 750px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+nav .main-nav > li {
+  list-style: none;
+  margin: auto;
+  height: 50px;
+  position: relative;
+}
+
+nav .main-nav > li:hover > ul {
+  display: block;
+}
+
+nav .main-nav > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav .main-nav > li > a:hover {
+  background-color: aqua;
+  color: red;
+}
+
+nav .main-nav > li > ul {
+  display: none;
+  width: 100%;
+  background-color: blue;
+  left: 0;
+  top: 100%;
+  position: absolute;
+}
+
+nav .main-nav > li > ul > li {
+  list-style: none;
+}
+
+nav .main-nav > li > ul > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav .main-nav > li > ul > li > a:hover {
+  background-color: aqua;
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

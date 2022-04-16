@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin anchor {
+    text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            padding: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            &:hover{
+                background-color: aqua;
+                color: red;
+            }
+           
+}
+nav{
+    background-color: blue;
+    width: 100%;
+    position: relative;
+    .logo{
+        display: flex;
+        margin: auto;
+        position: absolute;
+        padding-left: 100px;
+        
+        a{
+            text-decoration: none;
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+           text-transform: uppercase;
+           text-shadow: 1px 1px 1px red;
+           &:hover{
+               color: white;
+           }
+           
+           
+        }
+        
+    }
+    .main-nav
+    {
+     width: 750px;
+     margin: auto;
+     display: flex;
+     height: 50px;
+    
+     >li{
+         list-style: none;
+         margin: auto;
+         height: 50px;
+         position: relative;
+         &:hover{
+             >ul{
+                 display: block
+             }
+         }
+         >a{
+            @include anchor();
+        }
+
+        >ul{
+            display: none;
+            width: 100%;
+            background-color: blue;
+            left: 0;
+            top: 100%;
+            position: absolute;
+            >li{
+                list-style: none;
+                >a{
+                    @include anchor(); 
+                }
+            }
+        }
+     }
+     
+     
+    }
+}
+
