@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from cranky-nightingale-9dcbbf.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Apr 2022 05:06:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Library</title>
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="css/output.css" />
+
+    <!-- bootstrap-icons css link -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- title with search bar start -->
+    <header
+      class="w-full md:w-3/5 m-auto border-2 p-4 rounded-md my-3 drop-shadow-xl text-xl"
+    >
+      <article class="font-thin text-2xl md:text-4xl py-">
+        Phone Library
+      </article>
+      <form class="mt-5" id="searchForm">
+        <div class="grid grid-cols-4 gap-6">
+          <div class="relative z-0 mb-6 group col-span-3">
+            <input
+              type="text"
+              id="searchText"
+              class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              autocomplete="off"
+            />
+            <label
+              for="floating_first_name"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Search your mobile</label
+            >
+            <span
+              id="err"
+              class="block text-red-600 text-sm absolute left-0 bottom-0 translate-y-6"
+            ></span>
+          </div>
+          <div class="col-span-1">
+            <button
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700"
+            >
+              <i class="bi bi-search"></i>
+              <span class="hidden md:inline">Search...</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </header>
+    <!-- title with search bar end -->
+
+    <!-- search result start -->
+    <main
+      class="w-full md:w-3/5 m-auto border-2 p-4 rounded-md my-3 drop-shadow-xl h-max hidden"
+      id="results"
+    >
+      <span
+        class="block text-red-600 font-thin text-2xl md:text-4xl"
+        id="errResult"
+      ></span>
+      <div
+        id="mobiles"
+        class="grid grid-cols-1 md:grid-cols-3 gap-4 h-max"
+      ></div>
+    </main>
+    <!-- search result end -->
+
+    <!-- spinner start -->
+    <section
+      id="spinner"
+      class="absolute top-0 left-0 w-screen h-screen flex justify-center items-center text-blue-600 text-6xl hidden"
+    >
+      <i class="bi bi-arrow-repeat animate-spin"></i>
+    </section>
+    <!-- spinner end -->
+    <!-- javaScript Link -->
+    <script src="js/main.js"></script>
+  </body>
+
+<!-- Mirrored from cranky-nightingale-9dcbbf.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Apr 2022 05:06:14 GMT -->
+</html>
