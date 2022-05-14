@@ -1,0 +1,3 @@
+create a new file with the name .gitignore
+type: node_modiles
+save it
