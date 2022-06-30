@@ -6,4 +6,9 @@
 
 #myDiv {
   color: blue;
+}
+
+#err,
+#errSum {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
