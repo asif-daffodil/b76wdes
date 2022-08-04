@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#accordion {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.title {
+  font: normal small-caps bolder 22px auto arial;
+  border: 1px solid #000;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+  &:not(:first-child) {
+    margin-top: 6px;
+  }
+}
+
+.details {
+  font: italic normal bolder 14px auto arial;
+  padding: 8px;
+  transition: 0.4s;
+}
+
+.active {
+  background: lightgoldenrodyellow;
+  transition: 0.4s;
+}
+
+.d-none {
+  display: none;
+  transition: 0.4s;
+}
+
+.plus {
+  position: relative;
+  &::before {
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    line-height: 100%;
+    width: 40px;
+    text-align: center;
+  }
+  transition: 0.4s;
+}
+
+.minus {
+  @extend .plus;
+  &::before {
+    content: "-";
+  }
+  transition: 0.4s;
+}

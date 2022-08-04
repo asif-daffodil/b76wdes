@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#accordion {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.title {
+  font: normal small-caps bolder 22px auto arial;
+  border: 1px solid #000;
+  padding: 8px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.title:not(:first-child) {
+  margin-top: 6px;
+}
+
+.details {
+  font: italic normal bolder 14px auto arial;
+  padding: 8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.active {
+  background: lightgoldenrodyellow;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.d-none {
+  display: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.plus, .minus {
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.plus::before, .minus::before {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px;
+  line-height: 100%;
+  width: 40px;
+  text-align: center;
+}
+
+.minus {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.minus::before {
+  content: "-";
+}
+/*# sourceMappingURL=style.css.map */
