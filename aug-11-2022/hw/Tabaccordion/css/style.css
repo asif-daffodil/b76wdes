@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto;
+  border-radius: 6px;
+}
+.container > .row {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.container > .row:first-child {
+  border-radius: 6px 6px 0 0;
+}
+.container > .row > ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+}
+.container > .row > ul > li {
+  width: 25%;
+  padding: 12px 20px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #ccc;
+  color: #372772;
+}
+.container > .row > ul > li:hover {
+  background: #B8D0EB;
+  color: #fff;
+}
+.container > .row > ul > .active {
+  background: #B8D0EB;
+  color: #fff;
+  position: relative;
+}
+.container > .row > ul > .active::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+.container > .row > ul > .active:hover::before {
+  background: #B8D0EB;
+}
+.container > .row:last-child {
+  position: relative;
+  height: 160px;
+  border-top-width: 0;
+  border-radius: 0 0 6px 6px;
+}
+.container > .row:last-child > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+  letter-spacing: 1px;
+  background: #B8D0EB;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+.container > .row:last-child > .d-none {
+  display: none;
+}
+
+#accordion {
+  width: 600px;
+  margin: 50px auto;
+  border-left: 1px solid #B8D0EB;
+  border-right: 1px solid #B8D0EB;
+  padding: 10px;
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+  font-weight: normal;
+  color: #372772;
+  border-bottom: 1px solid #B8D0EB;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.title:not(:first-child) {
+  margin-top: 6px;
+}
+
+.details {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 8px;
+  transition: 0.4s;
+}
+
+.active {
+  transition: 0.4s;
+}
+
+.d-none {
+  display: none;
+  transition: 0.4s;
+}
+
+.plus, .minus {
+  position: relative;
+  transition: 0.4s;
+}
+.plus::before, .minus::before {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px;
+  line-height: 100%;
+  width: 40px;
+  text-align: center;
+}
+
+.minus {
+  transition: 0.4s;
+}
+.minus::before {
+  content: "-";
+}/*# sourceMappingURL=style.css.map */

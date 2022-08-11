@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  width: 750px;
+  background: #000;
+  margin: auto;
+  position: relative;
+}
+
+nav > ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+nav > ul > li {
+  width: 100%;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font: normal small-caps normal 22px auto auto Arial;
+  line-height: 40px;
+  text-align: center;
+}
+
+nav > ul > li:hover {
+  background: #00f;
+}
+
+nav > ul > li > .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 750px;
+  background: #000;
+  display: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+nav > ul > li > .submenu > ul {
+  list-style: none;
+}
+
+nav > ul > li > .submenu > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  font: italic normal normal 18px auto auto Arial;
+}
+
+nav > ul > li > .submenu > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+nav > ul > li > .submenu > ul > li:first-child > a {
+  text-decoration: underline;
+}
+
+#navcontroll {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: -1;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
