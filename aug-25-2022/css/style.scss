@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .main {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px solid #000, 0 0 10px solid #000 inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > .date,
+    > .week,
+    > .time {
+      width: 100%;
+      font: normal small-caps bold 24px auto arial;
+      text-align: center;
+    }
+    > .week {
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      > div {
+        border: 1px solid #ccc;
+        line-height: 30px;
+        margin: 0 4px;
+        padding: 0 8px;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+.active {
+  color: blue;
+  text-shadow: 0 0 2px rgb(69, 122, 155);
+  border: 1px solid cornflowerblue !important;
+  box-shadow: 0 0 5px dodgerblue;
+  background: lightskyblue;
+}

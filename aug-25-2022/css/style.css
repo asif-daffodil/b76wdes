@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .main {
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px solid #000, 0 0 10px solid #000 inset;
+          box-shadow: 0 0 10px solid #000, 0 0 10px solid #000 inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main > .date,
+.container .main > .week,
+.container .main > .time {
+  width: 100%;
+  font: normal small-caps bold 24px auto arial;
+  text-align: center;
+}
+
+.container .main > .week {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.container .main > .week > div {
+  border: 1px solid #ccc;
+  line-height: 30px;
+  margin: 0 4px;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+.active {
+  color: blue;
+  text-shadow: 0 0 2px #457a9b;
+  border: 1px solid cornflowerblue !important;
+  -webkit-box-shadow: 0 0 5px dodgerblue;
+          box-shadow: 0 0 5px dodgerblue;
+  background: lightskyblue;
+}
+/*# sourceMappingURL=style.css.map */
